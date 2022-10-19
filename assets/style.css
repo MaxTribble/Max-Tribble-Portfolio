@@ -1,0 +1,32 @@
+body{
+    background-color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    background-color: blue;
+    padding: 10px;
+    display:flex;
+}
+
+/*header h1 {
+    font-size: 48px;
+}*/
+
+header ul {
+    margin-bottom: 10px;
+    justify-content: end;
+}
+
+header ul li {
+    display: inline-block;
+    justify-content: end;
+}
+
+.aboutme {
+   text-align: center;
+}
+
+footer {
+    position:fixed;
+    bottom: 0px;
+}
