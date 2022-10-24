@@ -5,6 +5,7 @@ body{
 header {
     background-color: rgb(0, 0, 0);
     width: 100%;
+    position: fixed;
 }
 
 /*header h1 {
@@ -61,12 +62,23 @@ header ul {
     color: black; 
 }
 
+.link:focus {
+    box-shadow: 0 0 10px black inset;
+}
+
+.link:active {
+    outline: none;
+    box-shadow: 0 0 10px black inset;
+}
+
 .aboutme {
     display: inline-flex;
     flex-wrap:wrap;
-    flex-direction: column;
+    /*flex-direction: column;
     align-items: center;
     justify-content: center;
+    float: right;
+    margin: 300px 50px;*/
 }
 
 .img {
@@ -78,7 +90,7 @@ header ul {
     border: 30px;
     border: solid;
     border-color: black;
-    margin: 50px 50px
+    margin: 300px 50px 0 50px;
 }
 
 #img {
@@ -86,7 +98,20 @@ header ul {
     border-radius: 50px;
 }
 
+#img2 {
+    max-height: 100px;
+    max-width: 100px;
+    display: inline-block;
+}
+
+.work {
+    margin-top: 50px;
+    float: right;
+    display: inline-block;
+
+}
+
 footer {
-    position:fixed;
+    margin-top: 200px;
     bottom: 0px;
 }
