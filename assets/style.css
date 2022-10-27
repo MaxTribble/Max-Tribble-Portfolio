@@ -1,9 +1,10 @@
+/*setting general rules for the whole visible page*/
 body{
     background-color: rgb(255, 255, 255);
     font-family:'Courier New', Courier, monospace;
     font-size: 15px;
 }
-
+/*targeting the whole top navigation bar*/
 header {
     background-color: rgb(0, 0, 0);
     width: 100%;
@@ -12,7 +13,7 @@ header {
     justify-content: right;
     text-align: center;
 }
-
+/*targeting the elements of the navigation bar*/
 header ul {
     display:flex;
     gap: 5px;
@@ -22,12 +23,12 @@ header ul {
     text-align: center;
     margin-top: 15px;
 }
-
+/*taking away default parts of the navigation bar*/
 li a:visited {
     text-decoration: none;
     color: white;
 }
-
+/*setting attributes for the elements of the navigation bar*/
 li a {
     padding: 12px;
     border: 1px;
@@ -39,49 +40,45 @@ li a {
     justify-content: end;
     text-align: center;
 }
-
+/*removing default underlining for navigation bar elements*/
 li a:link{
     text-decoration: none;
     
 }
-
-
+/*setting backround transitions for the nav bar elements so you it's easier to see the element your cursor is on*/
 li a:hover {
     background-color: rgb(255, 255, 255);
     transition: ease-in-out .4s;
-    transform-origin: left;
-    transform: scaleX(1);
     cursor: pointer;
     color: black; 
     box-shadow: 0 0 10px black inset;
     border-radius: 15px;
 }
-
+/*extra decorations for hovering over navigation bar elements*/
 .link:focus {
     box-shadow: 0 0 10px black inset;
     text-decoration: none;
 }
-
+/*setting attributes for introduction at the top of the page*/
 .hello{
     justify-content: center;
     font-size: 30px;
     margin: 120px 0 100px 300px;
     font-family:'Times New Roman', Times, serif
 }
-
+/*container around the about me section to better use flex*/
 .maincontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+/* setting specific attributes for header of about me text*/
 .aboutme h2 {
     font-size: 30px;
     margin-bottom: 30px;
 }
-
-.aboutme {
-    
+/*setting attributes for about me text section*/
+.aboutme { 
     display: inline-flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -92,7 +89,7 @@ li a:hover {
     line-height: 2;
     font-size: 20px;
 }
-
+/*putting the image of me where I want it and making able to shrink for mobile*/
 .img {
     display: inline-flex;
     flex-wrap:wrap;
@@ -104,12 +101,12 @@ li a:hover {
     border-color: black;
     margin: 50px;
 }
-
+/*more characteristics for the image of me*/
 #img {
     width: 100%;
     border-radius: 50px;
 }
-
+/*setting attributes for the image of my work so far*/
 .img2 {
     max-height: 200px;
     max-width: 200px;
@@ -120,14 +117,14 @@ li a:hover {
     border-radius: 20px;
     margin: 0 100px;
 }
-
+/*setting attributes for the my work heading*/
 .work {
     margin: 100px;
     display:flex;
     justify-content:center;
     font-size: 30px;
 }
-
+/*setting attributes for the bottom of the page where the contact info is*/
 footer ul{
     font-size: 20px;
     padding: 100px;
@@ -137,7 +134,7 @@ footer ul{
     flex-direction: row;
     justify-content: space-evenly;
 }
-
+/*setting a media query to fix distortions from monitor to mobile size screens*/
 @media all and (max-width:768px){
     header {
         justify-content: space-around;
