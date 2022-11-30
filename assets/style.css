@@ -110,12 +110,12 @@ li a:hover {
 .img2 {
     max-height: 200px;
     max-width: 200px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     border: 2px solid black;
     border-radius: 20px;
-    margin: 0 100px;
+    margin: 20px 100px;
 }
 /*setting attributes for the my work heading*/
 .work {
