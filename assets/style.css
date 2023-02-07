@@ -115,13 +115,17 @@ li a:hover {
     justify-content: space-around;
     border: 2px solid black;
     border-radius: 20px;
-    margin: 20px 100px;
 }
 /*setting attributes for the my work heading*/
+#work {
+    display:flex;
+    justify-content:center;
+    font-size: 30px;
+}
 .work {
     margin: 100px;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     font-size: 30px;
 }
 /*setting attributes for the bottom of the page where the contact info is*/
